@@ -6,6 +6,8 @@ export const metadata = {
   description: 'App creada con Next.js',
 }
 
+/*esto es solo metadatos para seo e info */
+
 export default function RootLayout({
   children,
 }: {
@@ -17,3 +19,6 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+/*layout.js), que es una pieza fundamental en el App Router de Next.js. Su función es definir la estructura común (el "esqueleto") de todas las páginas de tu aplicación.*/ 
