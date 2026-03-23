@@ -1,5 +1,5 @@
 'use client';
-
+import './globals.css'; // Añade esta línea
 import { useState, useEffect } from 'react';
 
 type Nombre = {
