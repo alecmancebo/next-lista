@@ -57,7 +57,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$serv
 let nombresDB = [
     {
         id: 1,
-        nombre: "Nombre"
+        nombre: "Alec"
     }
 ];
 async function GET() {
@@ -68,7 +68,7 @@ async function POST(request) {
     const nuevo = {
         id: Date.now(),
         nombre: body.nombre
-    };
+    }; //date.now es un metodo para general id unicos
     nombresDB.push(nuevo);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(nuevo);
 }
@@ -78,7 +78,7 @@ async function DELETE(request) {
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
         mensaje: "Borrado"
     });
-}
+} /*Extrae el id del cuerpo de la petición. filter Sobrescribe el array nombresDB manteniendo solo aquellos elementos cuyo ID no coincida con el recibido.Retorno: Devuelve un mensaje de confirmación en JSON.*/ 
 }),
 ];
 

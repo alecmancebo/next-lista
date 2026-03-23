@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 let nombresDB = [
-  { id: 1, nombre: "Nombre" }
+  { id: 1, nombre: "Alec" }
 ];
 
 // GET y POST

@@ -7,7 +7,7 @@ type Nombre = {
   nombre: string;
 };
 
-export default function App() {
+export default function Page() {
   const [nombres, setNombres] = useState<Nombre[]>([]);
   const [inputNombre, setInputNombre] = useState("");
 

@@ -22,15 +22,15 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 16,
+            lineNumber: 18,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 5
     }, this);
-}
+} /*layout.js), que es una pieza fundamental en el App Router de Next.js. Su función es definir la estructura común (el "esqueleto") de todas las páginas de tu aplicación.*/ 
 }),
 "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
 
