@@ -1,0 +1,89 @@
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.contenedor {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #e1e1e1;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-borrar {
+ background: #f70000;
+ background: linear-gradient(90deg,rgba(247, 0, 0, 1) 0%, rgba(255, 152, 8, 1) 14%, rgba(252, 233, 22, 1) 33%, rgba(54, 249, 36, 1) 51%, rgba(83, 229, 237, 1) 71%, rgba(196, 83, 237, 1) 89%);
+
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f9fa;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+}

@@ -76,7 +76,7 @@ export default function App() {
           {nombres.map((n) => (
             <li key={n.id}>
               {n.nombre} 
-              <button onClick={() => borrarNombre(n.id)} style={{ marginLeft: '10px' }}>
+              <button onClick={() => borrarNombre(n.id)} style={{ marginLeft: '10px' }} className="btn-borrar">
                 Borrar
               </button>
             </li>

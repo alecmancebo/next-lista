@@ -1,3 +1,6 @@
+import './globals.css' // Importación del CSS
+
+
 export const metadata = {
   title: 'Mi Lista de Nombres',
   description: 'App creada con Next.js',
