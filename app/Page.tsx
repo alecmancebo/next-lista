@@ -1,5 +1,5 @@
 'use client';
-import './globals.css'; // Añade esta línea
+import './globals.css';
 import { useState, useEffect } from 'react';
 
 type Nombre = {
@@ -12,7 +12,7 @@ export default function App() {
   const [inputNombre, setInputNombre] = useState("");
 
   useEffect(() => {
-    fetch("/api/nombres") // URL corregida
+    fetch("/api/nombres")
       .then(res => res.json())
       .then((data: Nombre[]) => setNombres(data))
       .catch(err => console.error("Error al cargar nombres", err));
@@ -23,7 +23,7 @@ export default function App() {
     if (inputNombre.trim() === "") return;
 
     try {
-      const respuesta = await fetch("/api/nombres", { // URL corregida
+      const respuesta = await fetch("/api/nombres", { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nombre: inputNombre })
@@ -41,7 +41,7 @@ export default function App() {
 
   async function borrarNombre(id: number) {
     try {
-      const respuesta = await fetch("/api/nombres", { // URL corregida
+      const respuesta = await fetch("/api/nombres", { 
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id })

@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 
 let nombresDB = [
-  { id: 1, nombre: "Añade Nombre" }
+  { id: 1, nombre: "Nombre" }
 ];
 
-// MÉTODOS GET y POST
+// GET y POST
 export async function GET() {
   return NextResponse.json(nombresDB);
 }
@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   return NextResponse.json(nuevo);
 }
 
-// MÉTODO DELETE
+// DELETE
 export async function DELETE(request: Request) {
   const { id } = await request.json();
   nombresDB = nombresDB.filter(n => n.id !== id);

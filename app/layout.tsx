@@ -1,4 +1,4 @@
-import './globals.css' // Importación del CSS
+import './globals.css' 
 
 
 export const metadata = {
